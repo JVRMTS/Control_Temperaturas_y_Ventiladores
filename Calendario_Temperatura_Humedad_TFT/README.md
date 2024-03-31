@@ -54,16 +54,25 @@ TFT TD0     PIN 19  TOUCH
 PINES CC1101 8 pines - para los de 10 pines son los mismos pines, mira la hoja de datos de tu modelo.
 
 1	GND
+
 2	VCC	    3.3V
+
 3	GDO0	GPIO 14
+
 4	CSN	    GPIO 5
+
 5	SCK	    GPIO 18
+
 6	MOSI	GPIO 23
+
 7	MISO	GPIO 19
+
 8	GDO2	GPIO 4 (No es necesario en modo transmisión, solo para recepción)
+
 </p>
 <img src="Calendario_Temperatura_Humedad_TFT.jpg" alt="Calendario Temperatura Humedad_TFT" />
 <img src="Pantalla_control.jpg" alt="Pantalla Control Central" />
 <img src="Pantalla_Ventilador.jpg" alt="Pantalla control del ventilador" />
 <img src="CC1101.jpg" alt="CC1101" />
 <img src="KY-005.jpg" alt="KY-005" />
+

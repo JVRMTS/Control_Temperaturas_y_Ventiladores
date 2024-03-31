@@ -23,7 +23,7 @@ El control del ventilador esta probado en un ESP32 DEVKIT y hay que modificar la
 <p>
 He adjuntado los dos setup para los dos tipos de placa ESP32 en la libreria TFT_eSPI en el archivo User_Setup_Select.h se ha de seleccionar el que se desea, adjunto foto donde se ve.
 </p>
-<img src="User_Select_Setup.png" alt="User_Select_Setup para la libreria TFT_eSPI" />
+
 <P>
 CONFIGURACIÓN DE PINES PARA ESP32 DEV MODULE
 
@@ -76,3 +76,4 @@ PINES CC1101 8 pines - para los de 10 pines son los mismos pines, mira la hoja d
 <img src="visualizacion_otras_estancias.jpg" alt="Pantalla de visualizacion de otras estancias" />
 <img src="CC1101.jpg" alt="CC1101" />
 <img src="KY-005.jpg" alt="KY-005" />
+<img src="User_Select_Setup.png" alt="User_Select_Setup para la libreria TFT_eSPI" />
