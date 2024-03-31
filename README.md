@@ -71,7 +71,8 @@ PINES CC1101 8 pines - para los de 10 pines son los mismos pines, mira la hoja d
 
 </p>
 <img src="Calendario_Temperatura_Humedad_TFT.jpg" alt="Calendario Temperatura Humedad_TFT" />
-<img src="Pantalla_control.jpg" alt="Pantalla Control Central" />
-<img src="Pantalla_Ventilador.jpg" alt="Pantalla control del ventilador" />
+<img src="pantalla_control.jpg" alt="Pantalla Control Central" />
+<img src="pantalla_Ventilador.jpg" alt="Pantalla control del ventilador" />
+<img src="visualizacion_otras_estancias.jpg" alt="Pantalla de visualizacion de otras estancias" />
 <img src="CC1101.jpg" alt="CC1101" />
 <img src="KY-005.jpg" alt="KY-005" />
