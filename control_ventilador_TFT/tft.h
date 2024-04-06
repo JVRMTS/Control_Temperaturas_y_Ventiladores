@@ -98,14 +98,12 @@ void btn4_pressAction(void)
 void btn5_pressAction(void)
 {
   if (mostrar == 3){
-   //control = 1;
     ventilador = 1;
     mostrarPantallaV1();
     btn5.drawSmoothButton(false);
     btn6.drawSmoothButton(false);
   }
   if (mostrar == 4){
-    //control = 2;
     ventilador = 2;
     mostrarPantallaV2();
     btn5.drawSmoothButton(false);
@@ -115,8 +113,8 @@ void btn5_pressAction(void)
 
 void btn6_pressAction(void)
 {
-  btn5.drawSmoothButton(false);
-  btn6.drawSmoothButton(true);
+  //btn5.drawSmoothButton(false);
+  //btn6.drawSmoothButton(true);
 }
 
 // Función para iniciar y mostrar los botones
@@ -176,7 +174,7 @@ void zonaFijaPantalla(){
   tft.setFreeFont(FSSB12);                                    // Definimos el tamaño de texto de los botones
   initButtons();                                              // Iniciamos los botones y sus funciones
 }
-//void mostrarPantalla();
+
 // Esta funcion se ejecuta en el Setup para configurar la pantalla y mostrar los datos o dibujos que mo se refrescan mediante la función zonaFijaPantalla().
 void configuracionPantalla(){
   tft.begin();			                                          // Inicializa pantalla.
@@ -185,7 +183,7 @@ void configuracionPantalla(){
   zonaFijaPantalla();                                         // Llamamos a la función para mostrar los datos e imágenes que no se refrescan y permanecen fijos en pantalla.
 }
 
-// Función para mostrar los botones
+// Función para el touch de los botones
 void touchBotones(){
   static uint32_t scanTime = millis();
   uint16_t t_x = 9999, t_y = 9999;  // Para almacenar las coordenadas del touch 
@@ -215,6 +213,7 @@ String tem;
 String hum;
 String ste;
 String ver;
+
 // Función para escoger lo que queremos mostrar en pantalla
 String dat(){
 if(mostrar == 4){
@@ -245,7 +244,6 @@ void mostrarPantalla(){
   tft.setTextDatum(TC_DATUM);
   drawReloj(xpos - 215,6);
   drawTemperatura(xpos - 215,135);
-  btn5.drawSmoothButton(false);
   touchBotones();
 }
 

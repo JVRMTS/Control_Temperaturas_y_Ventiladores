@@ -432,8 +432,6 @@ void mostrarPantallaV1(){
     datos();
     // Llamamos a la actualización via OTA
     ArduinoOTA.handle();
-    // Llamamos a la actualización de los DDNS cada 10 segundos
-    //EasyDDNS.update(10000);
   }
   zonaFijaPantalla();
   if (mostrar == 3){
@@ -465,8 +463,6 @@ void mostrarPantallaV2(){
     datos();
     // Llamamos a la actualización via OTA
     ArduinoOTA.handle();
-    // Llamamos a la actualización de los DDNS cada 10 segundos
-    //EasyDDNS.update(10000);
   }
   zonaFijaPantalla();
   if (mostrar == 4){
