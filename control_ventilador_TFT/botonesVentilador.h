@@ -42,7 +42,10 @@ void btn_1_1_pressAction(void)
       controlVentilador(on_off_luz2, b);
     break;
   }
+  if (btn_1_1.justPressed()) btn_1_1.drawSmoothButton(true);
+  else btn_1_1.drawSmoothButton(false);
 }
+
 // volver a pantalla principal
 void btn_1_2_pressAction(void)
 {
@@ -59,6 +62,8 @@ void btn_1_3_pressAction(void)
       controlVentilador(on_off_vent2, b);
     break;
   }
+  if (btn_1_3.justPressed()) btn_1_3.drawSmoothButton(true);
+  else btn_1_3.drawSmoothButton(false);
 }
 
 void btn_1_4_pressAction(void)
@@ -71,6 +76,8 @@ void btn_1_4_pressAction(void)
       controlVentilador(luz_amarilla2, b);
     break;
   }
+  if (btn_1_4.justPressed()) btn_1_4.drawSmoothButton(true);
+  else btn_1_4.drawSmoothButton(false);
 }
 
 void btn_1_5_pressAction(void)
@@ -83,6 +90,8 @@ void btn_1_5_pressAction(void)
       controlVentilador(luz_blanca2, b);
     break;
   }
+  if (btn_1_5.justPressed()) btn_1_5.drawSmoothButton(true);
+  else btn_1_5.drawSmoothButton(false);
 }
 
 void btn_1_6_pressAction(void)
@@ -95,6 +104,8 @@ void btn_1_6_pressAction(void)
       controlVentilador(luz_azul2, b);
     break;
   }
+  if (btn_1_6.justPressed()) btn_1_6.drawSmoothButton(true);
+  else btn_1_6.drawSmoothButton(false);
 }
 
 void btn_1_7_pressAction(void)
@@ -107,6 +118,8 @@ void btn_1_7_pressAction(void)
       controlVentilador(brillo_bajar2, b);
     break;
   }
+  if (btn_1_7.justPressed()) btn_1_7.drawSmoothButton(true);
+  else btn_1_7.drawSmoothButton(false);
 }
 
 void btn_1_8_pressAction(void)
@@ -119,6 +132,8 @@ void btn_1_8_pressAction(void)
       controlVentilador(brillo_subir2, b);
     break;
   }
+  if (btn_1_8.justPressed()) btn_1_8.drawSmoothButton(true);
+  else btn_1_8.drawSmoothButton(false);
 }
 
 void btn_1_9_pressAction(void)
@@ -131,6 +146,8 @@ void btn_1_9_pressAction(void)
       controlVentilador(velo_1_2, b);
     break;
   }
+  if (btn_1_9.justPressed()) btn_1_9.drawSmoothButton(true);
+  else btn_1_9.drawSmoothButton(false);
 }
 
 void btn_1_10_pressAction(void)
@@ -143,6 +160,8 @@ void btn_1_10_pressAction(void)
       controlVentilador(velo_2_2, b);
     break;
   }
+  if (btn_1_10.justPressed()) btn_1_10.drawSmoothButton(true);
+  else btn_1_10.drawSmoothButton(false);
 }
 
 void btn_1_11_pressAction(void)
@@ -155,6 +174,8 @@ void btn_1_11_pressAction(void)
       controlVentilador(velo_3_2, b);
     break;
   }
+  if (btn_1_11.justPressed()) btn_1_11.drawSmoothButton(true);
+  else btn_1_11.drawSmoothButton(false);
 }
 
 void btn_1_12_pressAction(void)
@@ -167,6 +188,8 @@ void btn_1_12_pressAction(void)
       controlVentilador(velo_4_2, b);
     break;
   }
+  if (btn_1_12.justPressed()) btn_1_12.drawSmoothButton(true);
+  else btn_1_12.drawSmoothButton(false);
 }
 
 void btn_1_13_pressAction(void)
@@ -179,18 +202,22 @@ void btn_1_13_pressAction(void)
       controlVentilador(velo_5_2, b);
     break;
   }
+  if (btn_1_13.justPressed()) btn_1_13.drawSmoothButton(true);
+  else btn_1_13.drawSmoothButton(false);
 }
 
 void btn_1_14_pressAction(void)
 {
   switch(ventilador){
     case 1:
-      (invertir_vent, b);
+      controlVentilador(invertir_vent, b);
     break;
     case 2:
-      (invertir_vent2, b);
+      controlVentilador(invertir_vent2, b);
     break;
   }
+  if (btn_1_14.justPressed()) btn_1_14.drawSmoothButton(true);
+  else btn_1_14.drawSmoothButton(false);
 }
 
 void btn_1_15_pressAction(void)
@@ -203,6 +230,8 @@ void btn_1_15_pressAction(void)
       controlVentilador(h_2_2, b);
     break;
   }
+  if (btn_1_15.justPressed()) btn_1_15.drawSmoothButton(true);
+  else btn_1_15.drawSmoothButton(false);
 }
 
 void btn_1_16_pressAction(void)
@@ -215,6 +244,8 @@ void btn_1_16_pressAction(void)
       controlVentilador(h_4_2, b);
     break;
   }
+  if (btn_1_16.justPressed()) btn_1_16.drawSmoothButton(true);
+  else btn_1_16.drawSmoothButton(false);
 }
 
 void btn_1_17_pressAction(void)
@@ -227,6 +258,8 @@ void btn_1_17_pressAction(void)
       controlVentilador(h_8_2, b);
     break;
   }
+  if (btn_1_17.justPressed()) btn_1_17.drawSmoothButton(true);
+  else btn_1_17.drawSmoothButton(false);
 }
 
 // Función para iniciar y mostrar los botones
@@ -274,9 +307,9 @@ void initButtonsV() {
   btn_1_6.drawSmoothButton(false, 2, TFT_BLACK); // 3 es el ancho del contorno, TFT_BLACK es el color de fondo circundante para el suavizado
 // Botón Bajar Luz
   x = (tft.width() - BUTTON_Wv2_1) / 2 - 190;
-  btn_1_8.initButtonUL(x, y1, BUTTON_Wv2_1, BUTTON_Hv2, TFT_WHITE, TFT_PURPLE, TFT_WHITE, "-", 1);
-  btn_1_8.setPressAction(btn_1_7_pressAction);
-  btn_1_8.drawSmoothButton(false, 2, TFT_BLACK); // 3 es el ancho del contorno, TFT_BLACK es el color de fondo circundante para el suavizado
+  btn_1_7.initButtonUL(x, y1, BUTTON_Wv2_1, BUTTON_Hv2, TFT_WHITE, TFT_PURPLE, TFT_WHITE, "-", 1);
+  btn_1_7.setPressAction(btn_1_7_pressAction);
+  btn_1_7.drawSmoothButton(false, 2, TFT_BLACK); // 3 es el ancho del contorno, TFT_BLACK es el color de fondo circundante para el suavizado
 // Botón Subir Luz
   x = (tft.width() - BUTTON_Wv2_1) / 2 + 190;
   btn_1_8.initButtonUL(x, y1, BUTTON_Wv2_1, BUTTON_Hv2, TFT_WHITE, TFT_PURPLE, TFT_WHITE, "+", 1);
