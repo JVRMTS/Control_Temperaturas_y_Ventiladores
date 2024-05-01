@@ -31,7 +31,7 @@ DHT         PIN 22
 
 TFT CS      PIN 15
 
-TFT RST     PIN 4
+TFT RST     PIN 2 - RST
 
 TFT O/C     PIN 2
 
